@@ -24,3 +24,6 @@ Route::get('r1', function() {  //git practice 1-3  redirect routes r1 to r2
 Route::get('r2', function() {
     return view('welcome');
 });
+Route::get('hello/{name?}', function($name) { //git practice 2-1  hello tom
+    return 'Hello, '.$name;
+});
