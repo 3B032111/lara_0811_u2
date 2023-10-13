@@ -30,3 +30,12 @@ Route::get('hello/{name?}', function($name) { //git practice 2-1 and 2-2 hello t
 Route::get('hello/{name?}', function($name='Everybody') {//git practice 2-3 and 2-4 hello everybody/tom
     return 'Hello, '.$name;
 })->name('hello.index');//git practice 4-1 4-2 Route=hello.index
+
+Route::get('dashboard', function() { //git practice 5-1 set route
+    return 'dashboard';
+});
+Route::group(['prefix' => 'admin'], function() { //git practice 5-2 other route use group setting prefix
+    Route::get('dashboard', function() {
+        return 'admin dashboard';
+    });
+});
