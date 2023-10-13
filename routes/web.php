@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');//git practice 1-1 test view and commit
+    return 'welcome';//git practice 1-2 test show welcome
 });
