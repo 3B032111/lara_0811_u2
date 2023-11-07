@@ -13,9 +13,9 @@ use App\Http\Controllers\HomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome') ;//git practice 1-1 test view and commit
-});
+});*/
 Route::get('/', function () {
     return 'welcome';//git practice 1-2 test show welcome
 });
